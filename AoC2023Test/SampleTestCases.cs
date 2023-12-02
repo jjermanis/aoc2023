@@ -18,5 +18,15 @@ namespace AoC2017Test
             Assert.That(t2.NumericWithTextSum(), Is.EqualTo(281));
         }
 
+        [Test]
+        public void Day02()
+        {
+            var d = new Day02("Day02Test01.txt");
+            Assert.Multiple(() =>
+            {
+                Assert.That(d.PossibleGameSum(), Is.EqualTo(8));
+                Assert.That(d.MinimumGamePowerSum(), Is.EqualTo(2286));
+            });
+        }
     }
 }

@@ -19,5 +19,15 @@ namespace AoC2017Test
             });
         }
 
+        [Test]
+        public void Day02()
+        {
+            var d = new Day02();
+            Assert.Multiple(() =>
+            {
+                Assert.That(d.PossibleGameSum(), Is.EqualTo(2632));
+                Assert.That(d.MinimumGamePowerSum(), Is.EqualTo(69629));
+            });
+        }
     }
 }
