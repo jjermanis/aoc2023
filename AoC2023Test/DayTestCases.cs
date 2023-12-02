@@ -11,14 +11,12 @@ namespace AoC2017Test
         [Test]
         public void Day01()
         {
-            /*
             var d = new Day01();
             Assert.Multiple(() =>
             {
-                Assert.That(d.CaptchaSumNeighbors(), Is.EqualTo(1049));
-                Assert.That(d.CaptchaSumOpposite(), Is.EqualTo(1508));
+                Assert.That(d.NumericSum(), Is.EqualTo(54630));
+                Assert.That(d.NumericWithTextSum(), Is.EqualTo(54770));
             });
-            */
         }
 
     }
