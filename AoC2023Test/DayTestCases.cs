@@ -29,5 +29,16 @@ namespace AoC2017Test
                 Assert.That(d.MinimumGamePowerSum(), Is.EqualTo(69629));
             });
         }
+
+        [Test]
+        public void Day03()
+        {
+            var d = new Day03();
+            Assert.Multiple(() =>
+            {
+                Assert.That(d.SumPartNumbers(), Is.EqualTo(530849));
+                Assert.That(d.SumGearRatios(), Is.EqualTo(84900879));
+            });
+        }
     }
 }
