@@ -39,5 +39,16 @@ namespace AoC2017Test
                 Assert.That(d.SumGearRatios(), Is.EqualTo(467835));
             });
         }
+
+        [Test]
+        public void Day04()
+        {
+            var d = new Day04("Day04Test01.txt");
+            Assert.Multiple(() =>
+            {
+                Assert.That(d.TotalPoints(), Is.EqualTo(13));
+                Assert.That(d.TotalScratchCards(), Is.EqualTo(30));
+            });
+        }
     }
 }
