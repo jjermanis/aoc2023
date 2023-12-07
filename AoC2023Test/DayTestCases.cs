@@ -51,5 +51,16 @@ namespace AoC2017Test
                 Assert.That(d.TotalScratchCards(), Is.EqualTo(10378710));
             });
         }
+
+        [Test]
+        public void Day05()
+        {
+            var d = new Day05();
+            Assert.Multiple(() =>
+            {
+                Assert.That(d.LowestLocationBySeed(), Is.EqualTo(251346198));
+                Assert.That(d.LowestLocationByRange(), Is.EqualTo(72263011));
+            });
+        }
     }
 }
