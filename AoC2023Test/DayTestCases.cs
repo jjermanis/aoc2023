@@ -62,5 +62,16 @@ namespace AoC2017Test
                 Assert.That(d.LowestLocationByRange(), Is.EqualTo(72263011));
             });
         }
+
+        [Test]
+        public void Day06()
+        {
+            var d = new Day06();
+            Assert.Multiple(() =>
+            {
+                Assert.That(d.RecordSettingProduct(), Is.EqualTo(1624896));
+                Assert.That(d.CombinedRecordCount(), Is.EqualTo(32583852));
+            });
+        }
     }
 }
