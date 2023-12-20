@@ -73,5 +73,16 @@ namespace AoC2017Test
                 Assert.That(d.CombinedRecordCount(), Is.EqualTo(32583852));
             });
         }
+
+        [Test]
+        public void Day07()
+        {
+            var d = new Day07();
+            Assert.Multiple(() =>
+            {
+                Assert.That(d.TotalWinnings(), Is.EqualTo(245794640));
+                Assert.That(d.TotalWinningsWithJokers(), Is.EqualTo(247899149));
+            });
+        }
     }
 }
